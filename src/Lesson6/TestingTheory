@@ -1,0 +1,28 @@
+Testing Theory
+==============
+
+Goals of Testing: 
+1) "Complete Code Coverage": It's impossible for every line in your code
+to be executed in 1 run (if statements, etc). The goal is to ensure 
+that every line gets run at least once. Requires several trials dependant
+on the length of your code. 
+2) Efficiency: Testers want to avoid using test data that belongs 
+to the same "Equivalence Class" - Data that will send you down the same
+path of execution each time you run the program.
+
+Strategies:
+1) Test around "Boundary Conditions" - Data that falls right on or near
+boundaries. Ex: number must be 10 to 20, so test 9,10,11,19,20,21.
+2)Test with "Extreme Conditions" - Data that is far away from acceptable
+limits. Ex: test 10000000 or -1000000
+
+Testing Payroll Interface
+Boundaries:
+Type - try 0, 1, 2, 3
+Rate - try 6.74, 6.75, 30.50, 30.51
+Hours - try -1, 0, 1, 59, 60, 61
+
+Extremes: fucking obvious
+Type - try -1000, +1000
+Rate - try -100 and +100
+Hours - try -100 and +100
